@@ -1,0 +1,11 @@
+node_modules
+.svelte-kit
+.vercel
+supabase
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+pnpm-lock.yaml
