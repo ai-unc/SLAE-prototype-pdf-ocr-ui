@@ -23,6 +23,7 @@
 		"@sveltejs/adapter-vercel": "^5.4.0",
 		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
+		"@types/wicg-file-system-access": "^2023.10.5",
 		"autoprefixer": "^10.4.19",
 		"lucide-svelte": "^0.399.0",
 		"pdfjs-dist": "^4.4.168",

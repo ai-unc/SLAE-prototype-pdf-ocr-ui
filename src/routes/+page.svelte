@@ -14,7 +14,7 @@
 	import Result from "./Result.svelte";
 
 	// TODO: Scale workers based on pages
-	const DEFAULT_WORKER_COUNT = 10;
+	const DEFAULT_WORKER_COUNT = 20;
 	// const MAX_WORKER_COUNT = 20;
 
 	let ocr_scheduler = $state<Scheduler>(createScheduler());
@@ -225,7 +225,9 @@
 			use:melt={$content}
 			class="fixed left-1/2 top-1/2 z-50 h-[90vh] w-[95vw] max-w-[1200px] -translate-x-1/2 -translate-y-1/2 overflow-x-scroll rounded-xl bg-gray-200 p-12 text-lg leading-10 shadow-lg"
 		>
-			<button class="absolute right-5 top-5" onclick={() => navigator.clipboard.writeText(result_text)}><Files /></button>
+			<div class="sticky right-0 top-0">
+				<button class="absolute right-0 top-0" onclick={() => navigator.clipboard.writeText(result_text)}><Files /></button>
+			</div>
 			<div class="h-[90%] whitespace-pre-wrap">{result_text}</div>
 		</div>
 	</div>
